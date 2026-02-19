@@ -1,19 +1,19 @@
-/* Reset básico */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo general */
+/* ================= GENERAL ================= */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f6f9;
+    background-color: #f5f7fa;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header */
+/* ================= HEADER ================= */
 header {
     background-color: #1e3a8a;
     color: white;
@@ -37,13 +37,14 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #cbd5ff;
 }
 
-/* Hero */
+/* ================= HERO ================= */
 #hero {
     text-align: center;
     padding: 60px 20px;
@@ -52,12 +53,12 @@ nav a:hover {
 
 #hero button {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     background-color: #1e3a8a;
     color: white;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -65,18 +66,14 @@ nav a:hover {
     background-color: #3749c9;
 }
 
-/* Secciones */
+/* ================= SECCIONES ================= */
 section {
-    padding: 40px 20px;
+    padding: 50px 20px;
     width: 90%;
     margin: auto;
 }
 
-section h2 {
-    margin-bottom: 20px;
-}
-
-/* Beneficios */
+/* ================= BENEFICIOS ================= */
 #beneficios {
     display: flex;
     flex-wrap: wrap;
@@ -90,13 +87,7 @@ section h2 {
     border-radius: 8px;
 }
 
-/* Características */
-#caracteristicas ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-/* Testimonios */
+/* ================= TESTIMONIOS ================= */
 #testimonios article {
     background: white;
     padding: 15px;
@@ -104,7 +95,7 @@ section h2 {
     border-radius: 6px;
 }
 
-/* Formulario */
+/* ================= FORM ================= */
 form {
     display: flex;
     flex-direction: column;
@@ -121,8 +112,8 @@ button[type="submit"] {
     color: white;
     border: none;
     padding: 10px;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -130,7 +121,7 @@ button[type="submit"]:hover {
     background-color: #3749c9;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 footer {
     text-align: center;
     background-color: #1e3a8a;
@@ -139,8 +130,9 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
+
     nav {
         flex-direction: column;
         gap: 10px;

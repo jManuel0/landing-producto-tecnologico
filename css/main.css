@@ -1,0 +1,174 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= GENERAL ================= */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+header {
+    padding: 20px 0;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1d1d1f;
+    font-size: 14px;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+/* ================= HERO ================= */
+#hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#hero h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    color: #6e6e73;
+    margin-bottom: 30px;
+}
+
+/* make the hero image larger and centered */
+#hero .hero-img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* space below so the button sits underneath */        
+}
+
+#hero button {
+    padding: 14px 32px; /* slightly larger for visibility */
+    border-radius: 30px;
+    border: none;
+    background-color: #0071e3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-block; /* ensure block-level spacing */
+    margin-top: 10px;
+}
+
+#hero button:hover {
+    background-color: #005bb5;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    padding: 100px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ================= BENEFITS ================= */
+#beneficios {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#beneficios article {
+    max-width: 250px;
+}
+
+#beneficios h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#beneficios p {
+    color: #6e6e73;
+}
+
+/* ================= TESTIMONIOS ================= */
+#testimonios article {
+    margin-bottom: 30px;
+}
+
+#testimonios p {
+    font-style: italic;
+    color: #6e6e73;
+}
+
+/* ================= FORM ================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0071e3;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: #6e6e73;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 32px;
+    }
+
+    #beneficios {
+        flex-direction: column;
+        align-items: center;
+    }
+}

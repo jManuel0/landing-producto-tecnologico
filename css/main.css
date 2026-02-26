@@ -5,11 +5,30 @@
     box-sizing: border-box;
 }
 
+/* variables de tema */
+:root {
+    --primary: #1e3a8a;
+    --primary-light: #3749c9;
+    --background: #f4f6f9;
+    --hero-bg: #e0e7ff;
+    --text: #333;
+    --white: #fff;
+}
+
+/* modo oscuro automático */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #1e1e1e;
+        --text: #ddd;
+        --hero-bg: #2a2a3a;
+    }
+}
+
 /* Estilo general */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
+    background-color: var(--background);
+    color: var(--text);
     line-height: 1.6;
 }
 
@@ -35,19 +54,47 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav a:hover,
+nav a:focus {
+    color: var(--primary-light);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* foco visible accesible */
+nav a:focus {
+    outline: 2px dashed var(--primary-light);
+    outline-offset: 2px;
 }
 
 /* Hero */
 #hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: #e0e7ff;
+    background-color: var(--hero-bg);
+}
+
+#hero h2 {
+    font-size: clamp(32px, 5vw, 42px);
+    margin-bottom: 10px;
+}
+
+#hero p {
+    margin-bottom: 25px; /* espacio extra antes de la imagen/botón */
+}
+
+/* imagen dentro del hero */
+#hero .hero-img {
+    max-width: 90%;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 25px;
 }
 
 #hero button {
@@ -84,10 +131,17 @@ section h2 {
 }
 
 #beneficios article {
-    background: white;
+    background: var(--white);
     padding: 20px;
     flex: 1 1 250px;
     border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#beneficios article:hover,
+#beneficios article:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Características */
@@ -146,7 +200,45 @@ footer {
         gap: 10px;
     }
 
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
     #beneficios {
         flex-direction: column;
     }
+}
+
+/* siguiendo más puntos de quiebre */
+@media (max-width: 480px) {
+    #hero {
+        padding: 40px 10px;
+    }
+
+    #hero h2 {
+        font-size: clamp(28px, 6vw, 36px);
+    }
+}
+
+@media (min-width: 1024px) {
+    section {
+        width: 80%;
+    }
+}
+
+/* estilos de foco para botones */
+button,
+button[type="submit"] {
+    outline-offset: 2px;
+}
+
+button:focus,
+button[type="submit"]:focus {
+    outline: 2px dashed var(--primary-light);
 }

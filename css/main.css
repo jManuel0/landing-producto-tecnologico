@@ -13,7 +13,6 @@
     --hero-bg: #e0e7ff;
     --text: #333;
     --white: #fff;
-    --card-bg: #fff;   /* default card / article background */
 }
 
 /* modo oscuro automático */
@@ -22,7 +21,6 @@
         --background: #1e1e1e;
         --text: #ddd;
         --hero-bg: #2a2a3a;
-        --card-bg: #2a2a3a;   /* darker cards in dark mode */
     }
 }
 
@@ -133,7 +131,7 @@ section h2 {
 }
 
 #beneficios article {
-    background: var(--card-bg);
+    background: var(--white);
     padding: 20px;
     flex: 1 1 250px;
     border-radius: 8px;
@@ -154,7 +152,7 @@ section h2 {
 
 /* Testimonios */
 #testimonios article {
-    background: var(--card-bg);
+    background: white;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 6px;

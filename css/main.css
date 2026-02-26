@@ -60,15 +60,25 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+/* make the hero image larger and centered */
+#hero .hero-img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* space below so the button sits underneath */
+}
+
 #hero button {
-    padding: 12px 28px;
+    padding: 14px 32px; /* slightly larger for visibility */
     border-radius: 30px;
     border: none;
     background-color: #0071e3;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
     transition: 0.3s ease;
+    display: inline-block; /* ensure block-level spacing */
+    margin-top: 10px;
 }
 
 #hero button:hover {

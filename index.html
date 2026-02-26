@@ -2,126 +2,108 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>StudyTrack</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyTrack – Organiza tus trabajos universitarios</title>
-    <!-- Primary SEO -->
-    <meta name="description" content="StudyTrack te ayuda a organizar tus trabajos universitarios, controlar fechas de entrega y mejorar tu productividad académica.">
-    <meta name="keywords" content="estudiantes, productividad, tareas, universitarias, calendario, recordatorios">
-    <link rel="icon" href="assets/image/favicon.ico" type="image/x-icon">
 
-    <!-- Open Graph / Social sharing -->
-    <meta property="og:title" content="StudyTrack – Organiza tus trabajos universitarios">
-    <meta property="og:description" content="Herramienta para estudiantes que quieren mejorar su productividad y no olvidar fechas de entrega.">
-    <meta property="og:image" content="https://tusitio.com/assets/image/dashboard.webp">
-    <meta property="og:url" content="https://tusitio.com/">
-    <meta property="og:type" content="website">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Manifest for PWA (optional) -->
-    <link rel="manifest" href="manifest.json">
-
-    <!-- Google Font estilo Apple -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Tu CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- Encabezado -->
     <header>
         <nav>
             <h1>StudyTrack</h1>
             <ul>
                 <li><a href="#beneficios">Beneficios</a></li>
                 <li><a href="#caracteristicas">Características</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#testimonios">Opiniones</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- ================= HERO ================= -->
+    <!-- Sección principal -->
     <section id="hero">
-        <article>
-            <h2>Organiza tus trabajos universitarios fácilmente</h2>
-            <p>Una herramienta diseñada para estudiantes que desean mejorar su productividad.</p>
-            <img src="assets/image/dashboard.webp" alt="Interfaz de StudyTrack" class="hero-img">
-            <button id="start-btn">Comenzar ahora</button>
-        </article>
+        <h2>Organiza tus trabajos universitarios fácilmente</h2>
+        <p>Una herramienta sencilla para estudiantes que quieren mejorar su organización.</p>
+        <img src="assets/image/dashboard.webp" alt="Interfaz de StudyTrack" class="hero-img">
+        <button id="start-btn">Probar ahora</button>
     </section>
 
-    <!-- ================= BENEFICIOS ================= -->
+    <!-- Beneficios -->
     <section id="beneficios">
-        <h2>Beneficios</h2>
+        <h2>¿Por qué usar StudyTrack?</h2>
 
         <article>
-            <h3>Organización sencilla</h3>
-            <p>Gestiona tus tareas en un solo lugar.</p>
+            <h3>Organización clara</h3>
+            <p>Puedes ver todas tus tareas en un solo lugar.</p>
         </article>
 
         <article>
-            <h3>Recordatorios automáticos</h3>
-            <p>Recibe notificaciones antes de cada entrega.</p>
+            <h3>Recordatorios</h3>
+            <p>Recibe alertas antes de entregar tus trabajos.</p>
         </article>
 
         <article>
-            <h3>Seguimiento académico</h3>
-            <p>Lleva control del progreso en cada materia.</p>
+            <h3>Seguimiento de materias</h3>
+            <p>Lleva control de cada asignatura.</p>
         </article>
     </section>
 
-    <!-- ================= CARACTERÍSTICAS ================= -->
+    <!-- Características -->
     <section id="caracteristicas">
         <h2>Características principales</h2>
         <ul>
+            <li>Registro de tareas por materia</li>
             <li>Calendario integrado</li>
-            <li>Panel de control intuitivo</li>
-            <li>Interfaz adaptable a dispositivos móviles</li>
+            <li>Interfaz sencilla</li>
         </ul>
     </section>
 
-    <!-- ================= TESTIMONIOS ================= -->
+    <!-- Testimonios -->
     <section id="testimonios">
         <h2>Opiniones de estudiantes</h2>
 
         <article>
-            <p>"Me ayudó a organizar mejor mis trabajos."</p>
+            <p>"Me ayudó a no olvidar entregas importantes."</p>
             <strong>- Laura, Ingeniería</strong>
         </article>
 
         <article>
-            <p>"Ahora no olvido fechas importantes."</p>
+            <p>"Es fácil de usar y muy práctica."</p>
             <strong>- Andrés, Administración</strong>
         </article>
     </section>
 
-    <!-- ================= CONTACTO ================= -->
+    <!-- Formulario -->
     <section id="contacto">
         <h2>Contáctanos</h2>
 
         <form>
-            <label for="nombre">Nombre</label>
+            <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" required>
 
-            <label for="correo">Correo electrónico</label>
+            <label for="correo">Correo:</label>
             <input type="email" id="correo" required>
 
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- Pie de página -->
     <footer>
         <p>© 2026 StudyTrack - Proyecto académico</p>
-        <div>
-            <a href="#">Facebook</a>
+        <p>
+            <a href="#">Facebook</a> |
             <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-        </div>
+        </p>
     </footer>
 
     <script src="js/app.js"></script>
-
 </body>
 </html>

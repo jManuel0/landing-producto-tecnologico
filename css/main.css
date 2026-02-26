@@ -18,9 +18,10 @@
 /* modo oscuro automático */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #1e1e1e;
-        --text: #ddd;
-        --hero-bg: #2a2a3a;
+        --background: #121212;
+        --text: #eee;
+        --hero-bg: #1e1e1e;
+        --card-bg: #1e1e1e;   /* darker cards in dark mode */
     }
 }
 
@@ -131,11 +132,12 @@ section h2 {
 }
 
 #beneficios article {
-    background: var(--white);
+    background: var(--card-bg);
     padding: 20px;
     flex: 1 1 250px;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
+    color: var(--text);
 }
 
 #beneficios article:hover,
@@ -152,10 +154,11 @@ section h2 {
 
 /* Testimonios */
 #testimonios article {
-    background: white;
+    background: var(--card-bg);
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 6px;
+    color: var(--text);
 }
 
 /* Formulario */
